@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+	<script type="text/javascript">
+		//Declare variables
+		var i = 0;
+		var totalSales = 0;
+		var sales = 0;
+		var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+					"Saturday", "Sunday"];
+		
+		//For loop to get each days total
+		for (i = 0; i < 7; i++){
+			sales = prompt("What was the total sales on " + days[i]);
+			totalSales = +totalSales + +sales;
+		}//End for
+		
+		//Output results
+		document.write("The total sales for the week is $" + totalSales);
+	</script>
+</body>
+</html>
